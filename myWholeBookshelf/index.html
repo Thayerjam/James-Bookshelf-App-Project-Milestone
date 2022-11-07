@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css">
+        <title>Bookshelf</title>
+    </head>
+    <body>
+        <header>
+            <div id="navButtons">
+            <a href="about.html">About</a>
+            <a href="index.html">| Bookshelf |</a>
+            <a href="contact.html">Contact</a>
+            </div>
+        </header>
+        <main id="main">
+            <div id="addBookWrapper">
+            <div id="addBookInputs">
+                <input id="newBookTitle" placeholder="Title..."></input>
+                <input id="newBookAuthor" placeholder="Author..."></input>
+                <input id="newBookLanguage" placeholder="Language..."></input>
+                <input id="newBookSubject" placeholder="Subject..."></input>
+            </div>
+            <a href="#" class="addBook button" id="addBook">Add Book</a>
+            </div>
+            <div id="aboveBookDisplayWrapper">
+            <div id="totalBookCount">Total Book Count: 0</div>
+            <div class="sortDropDown button">
+                <a href="#" id="sortButton">Sort by</a>
+                <div class="sortDropDown-content">
+                <a href="#" id="sortByAuthor">A-Z by Authour</a>
+                <a href="#" id="sortByTitle">A-Z by Title</a>
+                <a href="#" id="sortByTopic">Number of Topics</a>
+                </div>
+            </div>
+            <a href="#" class="showFavorites button" id="showOnlyFavorites">Show only favorites</a>
+            <div id="favoriteCounter">Favorite Count: 0</div>
+            </div>
+            <div id="bookDisplayWrapper"></div>
+        </main>
+
+        <script src="js/book-data.js"></script>
+        <script src="js/book.js"></script>
+        <script src="js/bookshelf.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
