@@ -37,8 +37,7 @@ function Book(author, language, subject, title) {
       favoriteButton.classList.add('button');
       commentButton.classList.add('bookComment');
       commentButton.classList.add('button');
-        this.commentSpace.classList.add('commentSpace');
-      this.commentSpace.setAttribute("id", "commentSpace");
+      this.commentSpace.classList.add('commentSpace');
 
       //displaying relevant book data
       title.textContent = "Title: " + this.title;
